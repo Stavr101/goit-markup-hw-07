@@ -522,6 +522,7 @@
         </div>
         <div class="join">
           <b class="join-title">присоединяйтесь</b>
+
           <ul class="social-list list">
             <li class="social-list-item">
               <a
@@ -573,6 +574,23 @@
             </li>
           </ul>
         </div>
+
+        <div class="join">
+          <b class="join-title">Подпишитесь на рассылку</b>
+          <form class="social-subscription">
+            <label class="email">
+              <input type="email" name="email" placeholder="Email" />
+            </label>
+
+            <!-- <label for="email">E-mail<input type="email" /> </label> -->
+          </form>
+          <button class="hero-button send" type="submit">
+            Заказать услугу
+            <svg class="social-send-button" width="24" height="24">
+              <use href="./images/sprite.svg#send"></use>
+            </svg>
+          </button>
+        </div>
       </div>
     </footer>
 
@@ -583,6 +601,47 @@
             <use href="./images/sprite.svg#close"></use>
           </svg>
         </button>
+
+        <strong class="modal-invitation"
+          >Оставьте свои данные, мы вам перезвоним</strong
+        >
+        <form class="contact-form">
+          <label class="contact-form-field"
+            ><span>Имя</span>
+            <input name="user_name" class="contact-form-input" type="text" />
+          </label>
+          <label class="contact-form-field"
+            ><span>Телефон</span>
+            <input name="user_phone" class="contact-form-input" type="tel" />
+          </label>
+          <label class="contact-form-field"
+            ><span>Почта</span>
+            <input name="user_mail" class="contact-form-input" type="email" />
+          </label>
+          <label class="contact-form-field"
+            >Комментарий
+            <textarea
+              name="user_message"
+              class="contact-form-message"
+              placeholder="Введите текст"
+              id=""
+              cols="30"
+              rows="10"
+            ></textarea>
+          </label>
+          <div class="contact-form-chekbox-wraper">
+            <input
+              name="accept-policy"
+              type="checkbox"
+              class="contact-form-chekbox"
+              required
+            />
+            <label for="" class="contact-form-chekbox-label"
+              >Соглашаюсь с рассылкой и принимаю <a href="">Условия договора</a>
+            </label>
+          </div>
+          <button type="submit" class="button">Отправить</button>
+        </form>
       </div>
     </div>
 
