@@ -575,21 +575,24 @@
           </ul>
         </div>
 
-        <div class="join">
+        <div class="join-subscription">
           <b class="join-title">Подпишитесь на рассылку</b>
           <form class="social-subscription">
-            <label class="email">
-              <input type="email" name="email" placeholder="Email" />
-            </label>
-
-            <!-- <label for="email">E-mail<input type="email" /> </label> -->
+            <span class="mail-subscription">
+              <input
+                class="mail"
+                type="email"
+                name="user_mail"
+                placeholder="Email"
+              />
+            </span>
+            <button class="hero-button send-button" type="submit">
+              Подписаться
+              <svg class="social-send-button" width="24" height="24">
+                <use href="./images/sprite.svg#send"></use>
+              </svg>
+            </button>
           </form>
-          <button class="hero-button send" type="submit">
-            Заказать услугу
-            <svg class="social-send-button" width="24" height="24">
-              <use href="./images/sprite.svg#send"></use>
-            </svg>
-          </button>
         </div>
       </div>
     </footer>
@@ -597,50 +600,70 @@
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button data-modal-close type="button" class="hero-close-btn">
-          <svg class="hero-close-icon" width="18px" height="18px">
+          <svg class="hero-close-icon" width="18" height="18">
             <use href="./images/sprite.svg#close"></use>
           </svg>
         </button>
 
-        <strong class="modal-invitation"
-          >Оставьте свои данные, мы вам перезвоним</strong
-        >
+        <p class="modal-invitation">Оставьте свои данные, мы вам перезвоним</p>
+
         <form class="contact-form">
+          <!-- <div class="contact-form-list"> -->
           <label class="contact-form-field"
-            ><span>Имя</span>
-            <input name="user_name" class="contact-form-input" type="text" />
+            ><span class="contact-information">Имя</span>
+            <span class="contack-form-input-wraper">
+              <input name="user_name" class="contact-form-input" type="text" />
+              <svg class="contact-icon" width="18" height="18">
+                <use href="./images/sprite.svg#person-modal"></use>
+              </svg>
+            </span>
           </label>
           <label class="contact-form-field"
-            ><span>Телефон</span>
-            <input name="user_phone" class="contact-form-input" type="tel" />
+            ><span class="contact-information">Телефон</span>
+            <span class="contack-form-input-wraper">
+              <input name="user_phone" class="contact-form-input" type="tel" />
+              <svg class="contact-icon" width="18" height="18">
+                <use href="./images/sprite.svg#phone-modal"></use>
+              </svg>
+            </span>
           </label>
           <label class="contact-form-field"
-            ><span>Почта</span>
-            <input name="user_mail" class="contact-form-input" type="email" />
+            ><span class="contact-information">Почта</span>
+            <span class="contack-form-input-wraper">
+              <input name="user_mail" class="contact-form-input" type="email" />
+              <svg class="contact-icon" width="18" height="18">
+                <use href="./images/sprite.svg#email-modal"></use>
+              </svg>
+            </span>
           </label>
           <label class="contact-form-field"
-            >Комментарий
+            ><span class="contact-information">Комментарий</span>
             <textarea
               name="user_message"
               class="contact-form-message"
               placeholder="Введите текст"
-              id=""
-              cols="30"
-              rows="10"
             ></textarea>
           </label>
-          <div class="contact-form-chekbox-wraper">
+          <!-- </div> -->
+          <div class="contact-form-checkbox-wraper">
             <input
               name="accept-policy"
               type="checkbox"
-              class="contact-form-chekbox"
+              class="contact-form-checkbox visually-hidden"
+              id="polici-checkbox"
               required
             />
-            <label for="" class="contact-form-chekbox-label"
-              >Соглашаюсь с рассылкой и принимаю <a href="">Условия договора</a>
+            <label for="polici-checkbox" class="contact-form-checkbox-label"
+              >Соглашаюсь с рассылкой и принимаю &nbsp;<a
+                class="contact-form-checkbox-link"
+                href=""
+                >Условия договора</a
+              >
             </label>
           </div>
-          <button type="submit" class="button">Отправить</button>
+          <button type="submit" class="hero-button submit-button">
+            Отправить
+          </button>
         </form>
       </div>
     </div>
