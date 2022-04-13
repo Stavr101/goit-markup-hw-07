@@ -445,6 +445,14 @@ address {
   align-items: baseline;
 }
 
+.footer-item:last-child {
+  margin-left: auto;
+}
+
+.footer-item:not(:last-child) {
+  margin-right: 70px;
+}
+
 .adress {
   font-style: normal;
 
@@ -544,8 +552,8 @@ address {
 
 .mail-subscription {
   border: 1px solid rgba(255, 255, 255, 0.3);
-
   margin-right: 12px;
+  transition: border var(--transition);
 }
 
 .mail {
@@ -555,8 +563,14 @@ address {
   padding-left: 16px;
   border: none;
   outline: none;
-  background-color: var(--footer-background-color);
+  background-color: transparent;
   color: var(--secondary-accent-color);
+}
+
+.mail-subscription:hover,
+.mail-subscription:focus {
+  outline: none;
+  border-color: var(--accent-color);
 }
 
 .send-button {
@@ -564,6 +578,7 @@ address {
   padding-left: 0;
   padding-right: 0;
   justify-content: center;
+  align-items: center;
 }
 
 /* Portfolio */
@@ -713,8 +728,9 @@ address {
   top: 50%;
   left: 50%;
   padding: 40px;
-  /* height: 581px; */
-  width: 528px;
+  min-height: 581px;
+  max-width: 528px;
+  width: 100%;
   border-radius: 4px;
   background-color: var(--secondary-accent-color);
   box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -743,6 +759,8 @@ address {
 }
 
 .contact-information {
+  font-size: 12px;
+  line-height: 1.16;
   letter-spacing: 0.01em;
 }
 
@@ -756,11 +774,13 @@ address {
   transition: border var(--transition);
 }
 
+.contact-form-input:hover,
 .contact-form-input:focus {
   outline: none;
   border-color: var(--accent-color);
 }
 
+.contact-form-input:hover + .contact-icon,
 .contact-form-input:focus + .contact-icon {
   fill: var(--accent-color);
 }
@@ -777,6 +797,10 @@ address {
   left: 12px;
   transform: translateY(-50%);
   transition: fill var(--transition);
+}
+
+.contact-form-list {
+  margin-bottom: 20px;
 }
 
 .contact-form-message {
@@ -803,9 +827,9 @@ address {
 
 .contact-form-checkbox-label {
   display: flex;
+  justify-content: center;
   align-items: center;
-  font-weight: 400;
-  color: var(--secondary-text-color);
+  line-height: 1;
 }
 
 .contact-form-checkbox-label::before {
@@ -830,6 +854,7 @@ address {
   color: var(--accent-color);
 }
 
+.contact-form-checkbox:hover + .contact-form-checkbox-label::before,
 .contact-form-checkbox:focus + .contact-form-checkbox-label::before {
   border: 1px solid var(--accent-color);
 }
@@ -845,8 +870,8 @@ address {
 
 .hero-close-btn {
   position: absolute;
-  top: 18px;
-  right: 12px;
+  top: 8px;
+  right: 8px;
   padding: 0;
 
   display: flex;
