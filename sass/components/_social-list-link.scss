@@ -1,0 +1,17 @@
+.social-list-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  color: var(--client-link);
+  background-color: var(--footer-accent-background-color);
+  border-radius: 50%;
+  transition: color var(--transition), background-color var(--transition);
+
+  &:hover,
+  &:focus {
+    background-color: var(--accent-color);
+    color: var(--secondary-accent-color);
+  }
+}

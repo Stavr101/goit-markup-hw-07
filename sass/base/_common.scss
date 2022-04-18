@@ -1,3 +1,21 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  color: var(--secondary-text-color);
+  font-family: Roboto, sans-serif;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+
 h1,
 h2,
 h3,
@@ -23,7 +41,7 @@ img {
 }
 .link {
   text-decoration: none;
-  color: inherit;
+  // color: inherit;
 }
 
 address {

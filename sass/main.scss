@@ -4,5 +4,20 @@
 @import "./base/common";
 @import "./base/container";
 
+@import "./components/logo";
 @import "./components/buttons";
 @import "./components/card";
+@import "./components/_backdrop";
+@import "./components/_social-list";
+@import "./components/_social-list-link";
+
+@import "./layout/header";
+@import "./layout/hero";
+@import "./layout/quality";
+@import "./layout/service";
+@import "./layout/team";
+@import "./layout/client";
+@import "./layout/footer";
+@import "./layout/join";
+@import "./layout/buttons";
+@import "./layout/work-list";
