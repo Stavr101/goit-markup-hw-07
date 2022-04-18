@@ -138,47 +138,12 @@ body {
   color: var(--secondary-accent-color);
 }
 
-.hero-button {
-  min-width: 200px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  padding-left: 30px;
-  padding-right: 30px;
-  border-radius: 4px;
-
-  cursor: pointer;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.88;
-  border: none;
-  letter-spacing: 0.06em;
-  background: var(--accent-color);
-  color: var(--secondary-accent-color);
-  transition: background-color var(--transition);
-}
-
-.hero-button:hover,
-.hero-button:focus {
-  background-color: #188ce8;
-}
-
 /* hero end */
 
 /* quality start*/
 
-.card-set {
-  display: flex;
-  flex-wrap: wrap;
-  margin-left: -30px;
-  margin-top: -30px;
-}
 .quality {
   padding-bottom: 0;
-}
-.card-item {
-  flex-basis: calc(100% / var(--card-item) - 30px);
-  margin-left: 30px;
-  margin-top: 30px;
 }
 
 .service-list {
