@@ -185,11 +185,11 @@ address {
   color: var(--primary-title-color);
 }
 
-.contact-form__field {
+.contact-form-field {
   display: block;
 }
 
-.contact-form__field:not(:last-child) {
+.contact-form-field:not(:last-child) {
   margin-bottom: 10px;
 }
 
