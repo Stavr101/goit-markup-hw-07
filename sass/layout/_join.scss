@@ -13,7 +13,7 @@
   color: var(--secondary-accent-color);
 }
 
-.join-list-link {
+.join-list__link {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -29,7 +29,7 @@
   }
 }
 
-.join-list-icon {
+.join-list__icon {
   fill: var(--secondary-accent-color);
   .join-list-link:hover &,
   .join-list-link:focus & {
@@ -37,7 +37,7 @@
   }
 }
 
-.join-list-item:not(:last-child) {
+.join-list__item:not(:last-child) {
   margin-right: 10px;
 }
 

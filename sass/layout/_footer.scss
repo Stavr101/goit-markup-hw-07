@@ -2,7 +2,7 @@
   padding-top: 60px;
   padding-bottom: 60px;
   background: var(--footer-background-color);
-  .social-list-link {
+  .social-list__link {
     color: var(--secondary-accent-color);
   }
   .logo {
@@ -43,15 +43,15 @@
   }
 }
 
-.nav-footer-item:not(:last-child) {
+.nav-footer__item:not(:last-child) {
   margin-bottom: 9px;
 }
 
-.footer.social-list-link {
+.footer.social-list__link {
   color: var(--secondary-accent-color);
 }
 
-.social-send-button {
+.social-send__button {
   margin-left: 10px;
   fill: currentColor;
 }

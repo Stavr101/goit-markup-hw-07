@@ -2,7 +2,7 @@
   --card-item: 3;
 }
 
-.work-list-item {
+.work-list__item {
   display: flex;
   flex-direction: column;
   transition: box-shadow var(--transition);
@@ -31,8 +31,8 @@
   transform: translateY(100%);
   transition: transform var(--transition);
 
-  .work-list-item:hover &,
-  .work-list-item:focus & {
+  .work-list__item:hover &,
+  .work-list__item:focus & {
     transform: translateY(0);
   }
 }

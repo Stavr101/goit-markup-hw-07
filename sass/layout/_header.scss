@@ -56,10 +56,6 @@
   }
 }
 
-.header-link__icon {
-  fill: currentColor;
-}
-
 .auth-nav {
   display: flex;
   margin-left: auto;
@@ -67,8 +63,9 @@
   .item:not(:last-child) {
     margin-right: 50px;
   }
-  .link-icon {
+  .header-link__icon {
     fill: currentColor;
     margin-right: 10px;
   }
+  
 }
